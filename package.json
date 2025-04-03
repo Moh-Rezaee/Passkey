@@ -1,11 +1,11 @@
 {
   "name": "passkey",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Passkey single ACUL React app using Webpack",
   "main": "src/index.js",
   "scripts": {
     "start": "webpack serve --mode development --open",
-    "build": "webpack --mode development"
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "react": "^18.0.0",
