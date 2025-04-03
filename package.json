@@ -19,7 +19,8 @@
     "webpack": "^5.0.0",
     "webpack-cli": "^4.0.0",
     "webpack-dev-server": "^4.0.0",
-    "html-webpack-plugin": "^5.0.0"
+    "html-webpack-plugin": "^5.0.0",
+    "@auth0/auth0-acul-js": "^0.1.0-beta.3"
   },
   "keywords": [],
   "author": "Moh Rezaee",
