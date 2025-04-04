@@ -1,12 +1,12 @@
-import React from 'react';
-import { PasskeyEnrollment as ScreenProvider } from "@auth0/auth0-acul-js";
+import React, { use } from 'react';
+import { PasskeyEnrollmentLocal as ScreenProvider } from "@auth0/auth0-acul-js";
 
 const App = () => {
   const handleClick = () => {
     console.log("button clicked react");
 
     const screenProvider = new ScreenProvider();
-    screenProvider.PasskeyEnrollment();
+    screenProvider.continuePasskeyEnrollmentLocal();
   };
 
   return (
