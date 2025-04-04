@@ -6,13 +6,13 @@ const App = () => {
     console.log("button clicked react");
 
     const screenProvider = new ScreenProvider();
-    screenProvider.continuePasskeyEnrollment();
+    screenProvider.PasskeyEnrollment();
   };
 
   return (
     <div>
       <h1>Passkey POC</h1>
-      <button type="submit" onClick={handleClick}> Login 2</button>
+      <button type="submit" onClick={handleClick}> Enable Passkey</button>
     </div>
   );
 };
