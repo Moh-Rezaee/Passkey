@@ -1,20 +1,14 @@
 import React, { use } from 'react';
-import { PasskeyEnrollment as ScreenProvider } from "@auth0/auth0-acul-js";
+import PasskeyEnrollment from '@auth0/auth0-acul-js/passkey-enrollment';
 
 const App = () => {
   const handleClick = () => {
     console.log("button clicked react");
 
-    const screenProvider = new ScreenProvider();
-    screenProvider.continuePasskeyEnrollment({
-      onSuccess: (response) => {
-        console.log("Success", response);
-      },
-      onError: (error) => {
-        console.error("Error", error);
-      },
-    });
-      
+    const passkeyEnrollment = new PasskeyEnrollment();
+    passkeyEnrollment.continuePasskeyEnrollment();
+
+    console.log("button clicked react 2");
   };
 
   return (
