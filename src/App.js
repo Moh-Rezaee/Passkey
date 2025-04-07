@@ -6,11 +6,10 @@ const App = () => {
     console.log("button clicked react");
 
     const passkeyEnrollment = new PasskeyEnrollment();
-    console.log("passkey 1: "+ passkeyEnrollment.client);
-    console.log("passkey 2: "+ passkeyEnrollment.screen);
-    console.log("passkey 3: "+ passkeyEnrollment.tenant);
-    console.log("passkey 4: "+ passkeyEnrollment.user.email);
-    console.log("passkey 5: "+ passkeyEnrollment.user);
+    console.log("passkey 1: "+ JSON.stringify(passkeyEnrollment.client));
+    console.log("passkey 2: "+ JSON.stringify(passkeyEnrollment.screen));
+    console.log("passkey 3: "+ JSON.stringify(passkeyEnrollment.tenant));
+    console.log("passkey 5: "+ JSON.stringify(passkeyEnrollment.user));
     passkeyEnrollment.continuePasskeyEnrollment();
 
     console.log("button clicked react 2");
