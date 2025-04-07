@@ -6,7 +6,11 @@ const App = () => {
     console.log("button clicked react");
 
     const passkeyEnrollment = new PasskeyEnrollment();
-    passkeyEnrollment.continuePasskeyEnrollment();
+    passkeyEnrollment.continuePasskeyEnrollment({
+      user: {
+        email: "localmoh@gmail.com"
+      }
+    });
 
     console.log("button clicked react 2");
   };
